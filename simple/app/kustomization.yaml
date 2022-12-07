@@ -1,0 +1,9 @@
+resources:
+  - helm.yaml
+configMapGenerator:
+  - name: default-values
+    files:
+      - default-values.yaml
+    behavior: create
+generatorOptions:
+  disableNameSuffixHash: true
